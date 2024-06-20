@@ -1,5 +1,6 @@
 import "./index.css";
 import getAboutDiv from "./about.js";
+import getMenuDiv from "./menu.js";
 
 const mainContainer = document.querySelector("#content");
 mainContainer.innerHTML = "";
@@ -11,7 +12,7 @@ const getPage = (id) => {
       return getAboutDiv();
       break;
     case "menu":
-      return;
+      return getMenuDiv();
       break;
     case "contacts":
       return;
@@ -24,6 +25,20 @@ const getPage = (id) => {
 
 const navMenu = document.querySelector(".links");
 navMenu.addEventListener("click", (e) => {
-  mainContainer.innerHTML = "";
-  mainContainer.appendChild(getPage(e.target.id));
+  switch (e.target.id) {
+    case "about":
+      mainContainer.innerHTML = "";
+      mainContainer.appendChild(getAboutDiv());
+      break;
+    case "menu":
+      mainContainer.innerHTML = "";
+      mainContainer.appendChild(getMenuDiv());
+      break;
+    case "contacts":
+      return;
+      break;
+    default:
+      return;
+      break;
+  }
 });
