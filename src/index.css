@@ -3,10 +3,9 @@
 :root {
   --color-primary: #d4d4d4;
   --color-background: #fff7ed;
-  --color-secondary: #a3a3a3;
+  --color-secondary: #262626;
   --color-secondary-alt: #737373;
   --color-links: #fafafa;
-  --font-headers: "Playfair Display", serif;
   --font-text: "Ubuntu", sans-serif;
 }
 
@@ -35,8 +34,10 @@ header {
 }
 
 .logo {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-text);
   font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-secondary);
 }
 
 .links {
@@ -55,7 +56,8 @@ li button {
   font-family: var(--font-text);
   &:hover {
     transition: 200ms;
-    background-color: var(--color-secondary-alt);
+    color: var(--color-secondary);
+    background-color: var(--color-links);
   }
 }
 

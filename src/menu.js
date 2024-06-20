@@ -40,7 +40,7 @@ export default function getMenuDiv() {
 
     const itemName = document.createElement("p");
     itemName.className = "item-name";
-    itemName.innerText = nameArray[index];
+    itemName.innerText = nameArray[index].toUpperCase();
 
     const itemPrice = document.createElement("p");
     itemPrice.className = "item-price";
