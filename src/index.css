@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
   --color-primary: #fef08a;
@@ -7,7 +7,7 @@
   --color-secondary-alt: #eab308;
   --color-links: #404040;
   --font-headers: "Playfair Display", serif;
-  --font-text: "IBM Plex Serif", serif;
+  --font-text: "Ubuntu", sans-serif;
 }
 
 * {
@@ -79,6 +79,8 @@ li button {
 }
 
 .about-text {
+  line-height: 40px;
+  padding-bottom: 24px;
   font-size: 3rem;
   align-self: self-end;
 }
