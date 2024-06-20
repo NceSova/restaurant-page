@@ -1,3 +1,4 @@
 import "./index.css";
+import getAboutDiv from "./modules/about";
 
-alert("ГОЙДА");
+const mainContainer = document.querySelector("#content");
