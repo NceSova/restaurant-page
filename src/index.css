@@ -17,6 +17,7 @@
 }
 
 body {
+  overflow: hidden;
   height: 100vh;
   display: grid;
   grid-template-rows: 4.5rem auto;
@@ -79,9 +80,9 @@ li button {
 }
 
 .about-text {
-  line-height: 40px;
+  line-height: 3.5rem;
   padding-bottom: 24px;
-  font-size: 3rem;
+  font-size: 5rem;
   align-self: self-end;
 }
 
@@ -99,7 +100,7 @@ li button {
   & > img {
     aspect-ratio: 350/400;
     height: auto;
-    width: 350px;
+    width: 25rem;
     border-radius: 16px;
   }
 }

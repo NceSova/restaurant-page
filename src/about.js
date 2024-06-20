@@ -1,4 +1,4 @@
-import png from "./about.png";
+import png from "./images/about.png";
 
 export default function getAboutDiv() {
   const aboutDiv = document.createElement("div");
