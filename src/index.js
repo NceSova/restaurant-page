@@ -23,4 +23,7 @@ const getPage = (id) => {
 };
 
 const navMenu = document.querySelector(".links");
-navMenu.addEventListener("click", (e) => {});
+navMenu.addEventListener("click", (e) => {
+  mainContainer.innerHTML = "";
+  mainContainer.appendChild(getPage(e.target.id));
+});
