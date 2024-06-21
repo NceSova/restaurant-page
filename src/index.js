@@ -1,27 +1,11 @@
 import "./index.css";
 import getAboutDiv from "./about.js";
 import getMenuDiv from "./menu.js";
+import getContactsDiv from "./contacts.js";
 
 const mainContainer = document.querySelector("#content");
 mainContainer.innerHTML = "";
 mainContainer.appendChild(getAboutDiv());
-
-const getPage = (id) => {
-  switch (id) {
-    case "about":
-      return getAboutDiv();
-      break;
-    case "menu":
-      return getMenuDiv();
-      break;
-    case "contacts":
-      return;
-      break;
-    default:
-      return;
-      break;
-  }
-};
 
 const navMenu = document.querySelector(".links");
 navMenu.addEventListener("click", (e) => {
@@ -35,7 +19,8 @@ navMenu.addEventListener("click", (e) => {
       mainContainer.appendChild(getMenuDiv());
       break;
     case "contacts":
-      return;
+      mainContainer.innerHTML = "";
+      mainContainer.appendChild(getContactsDiv());
       break;
     default:
       return;
